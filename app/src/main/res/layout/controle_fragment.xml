@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.ibbxinovacao.sageglass.ControleFragment">
+
+    <Button
+        android:id="@+id/down"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="130dp"
+        android:layout_height="190dp"
+        android:layout_alignEnd="@+id/sage"
+        android:layout_centerVertical="true"
+        android:background="@drawable/down"
+        android:paddingBottom="100dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="130dp"
+        android:layout_height="190dp"
+        android:layout_alignStart="@+id/sage"
+        android:layout_alignTop="@+id/down"
+        android:background="@drawable/up" />
+
+    <ImageView
+        android:id="@+id/sage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/sage" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/up"
+        android:layout_marginTop="59dp"
+        android:layout_toStartOf="@+id/connected"
+        android:text="Bluetooth"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/connected"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/status"
+        android:layout_alignBottom="@+id/status"
+        android:layout_alignEnd="@+id/down"
+        android:text="Não Conectado"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp" />
+
+</RelativeLayout>
